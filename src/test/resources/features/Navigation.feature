@@ -1,6 +1,6 @@
 Feature: Navigation Menu
 
-  @wip
+
   Scenario Outline: Navigate to <module>-<subModule>
     Given The user is on the login page
     And The user logs in as a "Sales Manager"

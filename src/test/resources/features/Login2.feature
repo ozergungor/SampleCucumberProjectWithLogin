@@ -16,8 +16,6 @@ Feature: Login 2 - With parameters:
     When The user logs in as a "Store Manager"
     Then The user is on the "Dashboard" page
 
-
-
   #--with List--------------------------------
   Scenario: Login as a Driver 2
     When The user logs in with following credentials (list)
@@ -36,7 +34,6 @@ Feature: Login 2 - With parameters:
       | storemanager51 |
       | UserUser123    |
     Then The user is on the "Dashboard" page
-
 
 
   #--with Map---------------------------------

@@ -7,7 +7,6 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class BrowserUtils {
 
-
 	public static void wait(int second) {
 		second *= 1000;
 		try {
@@ -15,7 +14,6 @@ public class BrowserUtils {
 		} catch (InterruptedException ignored) {
 		}
 	}
-
 
 	//wait for clickability of an element then click
 	public static void clickWithWait(WebElement element, int timeOut) {

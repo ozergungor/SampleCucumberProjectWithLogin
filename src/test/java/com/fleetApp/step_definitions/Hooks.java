@@ -15,15 +15,12 @@ import java.util.concurrent.TimeUnit;
 public class Hooks {
 
     public static WebDriver driver;
-
     @Before()
     public void setUp(){
         driver = Driver.get();
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
     }
-
-
     @After()
     public void tearDown(Scenario scenario){
         if(scenario.isFailed()){
@@ -32,6 +29,4 @@ public class Hooks {
         }
         Driver.closeDriver();
     }
-
-
 }

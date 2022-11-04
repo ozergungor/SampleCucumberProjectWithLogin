@@ -81,8 +81,6 @@ public class LoginStepDef {
 		String actualTitle = loginPage.getPageTitle();
 		Assert.assertEquals(expectedPageTitle,actualTitle);
 	}
-
-
 	//feature: login2
 	@When("The user logs in with following credentials \\(list)")
 	public void the_user_logs_in_with_following_credentials(List<String> credentialsList) {
@@ -92,8 +90,6 @@ public class LoginStepDef {
 
 		loginPage.waitUntilLoaderScreenDisappear();
 	}
-
-
 	//feature: login2
 	@When("The user logs in with following credentials \\(map)")
 	public void the_user_logs_in_with_following_credentials(Map<String,String > credentialsMap) {
@@ -103,6 +99,5 @@ public class LoginStepDef {
 
 		loginPage.waitUntilLoaderScreenDisappear();
 	}
-
 
 }
