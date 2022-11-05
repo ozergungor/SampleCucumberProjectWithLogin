@@ -1,10 +1,11 @@
-@RememberMe
-Feature: Remember me on this computer functionality
+@TRAD-752
+Feature: US-05 Remember me on this computer functionality
 
   Background:
     Given The user is on the login page
 
 
+    @TRAD-746
     Scenario: User should see his/her credentials already entered
                       in the login page after Remember me on
                       this computer checkbox is clicked

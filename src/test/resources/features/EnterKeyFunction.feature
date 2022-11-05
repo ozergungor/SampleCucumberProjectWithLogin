@@ -1,4 +1,4 @@
-@EnterKeyFunction
+@TRAD-753
 Feature: Login-6 Enter Key Function
 
   AC: User can use "Enter" key from their keyboard to switch to next field / btn
@@ -9,6 +9,7 @@ Feature: Login-6 Enter Key Function
   Background:
     Given The user is on the login page
 
+  @TRAD-747
     Scenario:Verification of Enter Key Functionality
       When User enters username credential
       And User enters password credential
